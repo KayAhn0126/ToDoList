@@ -9,5 +9,5 @@ import Foundation
 
 struct Task {
     var title: String
-    var dont: Bool
+    var done: Bool
 }
