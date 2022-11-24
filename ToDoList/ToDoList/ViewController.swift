@@ -59,22 +59,16 @@ class ViewController: UIViewController {
     
     func saveTasks() {
         let data = self.tasks.map {
-            [
-                "title": $0.title, "done": $0.done
-            ]
+            return Task(title: $0.title, done: $0.done)
         }
         let userDefaults = UserDefaults.standard
-        userDefaults.set(data, forKey: "tasks")
+        userDefaults.set(try? PropertyListEncoder().encode(data), forKey: "tasks")
     }
     
     func loadTasks() {
         let userDefaults = UserDefaults.standard
-        guard let data = userDefaults.object(forKey: "tasks") as? [[String: Any]] else { return }
-        self.tasks = data.compactMap {
-            guard let title = $0["title"] as? String else { return nil }
-            guard let done = $0["done"] as? Bool else { return nil }
-            return Task(title: title, done: done)
-        }
+        guard let data = userDefaults.object(forKey: "tasks") as? [Task] else { return }
+        self.tasks = data
     }
 }
 
