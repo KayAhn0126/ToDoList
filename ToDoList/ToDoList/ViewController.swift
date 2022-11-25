@@ -67,8 +67,10 @@ class ViewController: UIViewController {
     
     func loadTasks() {
         let userDefaults = UserDefaults.standard
-        guard let data = userDefaults.object(forKey: "tasks") as? [Task] else { return }
-        self.tasks = data
+        if let data = userDefaults.value(forKey: "tasks") as? Data {
+            let realData = try? PropertyListDecoder().decode([Task].self, from: data)
+            self.tasks = realData!
+        }
     }
 }
 
