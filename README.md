@@ -1,5 +1,13 @@
 # ToDoList
 
+## 🍎 작동 화면
+
+| 할 일 추가 | 할 일 삭제 |
+|:-:|:-:|
+| ![](https://i.imgur.com/0gg5FVW.gif)| ![](https://i.imgur.com/3Qk0ajr.gif) |
+| 할 일 재배치 | 할 일 저장 |
+![](https://i.imgur.com/XDTyxkp.gif) | ![](https://i.imgur.com/HIBEUFf.gif) |
+
 ## 🍎 TableView 만들기
 - Navigation Controller 추가
     - Table View도 같이 생성됨
