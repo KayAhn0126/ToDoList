@@ -12,7 +12,7 @@
 - [TableView DataSource / Delegate Protocol 정리](https://github.com/KayAhn0126/iOS-Study/tree/main/GrammarAndKnowledge/TableViewProtocols)
 
 ## 🍎 Alert 정리
-- [ToDoList 프로젝트에서 Alert 사용 정리](https://github.com/KayAhn0126/iOS-Study/tree/main/UI/UIAlert/UIAlertToDoListExample)
+- [ToDoList 프로젝트에서 Alert 사용 정리](https://github.com/KayAhn0126/iOS-Study/tree/main/UI/UIAlertController/UIAlertToDoListExample)
 
 ## 🍎 [userDefaults에서 구조체 인스턴스 사용하기 & 리서치](https://github.com/KayAhn0126/iOS-Study/tree/main/GrammarAndKnowledge/HandlingObjectInUserDefaults)
 - saveTasks()는 userDefaults에 데이터를 저장하는 메서드
