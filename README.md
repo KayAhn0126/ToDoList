@@ -91,7 +91,7 @@ extension ViewController: UITableViewDelegate {
     }
 }
 ```
-- 1. 선택된 행의 row를 가ㅣㅈ고 tasks 배열에서 요소을 가져온다.
+- 1. 선택된 행의 row를 가지고 tasks 배열에서 요소을 가져온다.
 - 2. 요소의 done 프로퍼티를 반대로 바꿔준다.
 - 3. 프로퍼티 값이 바뀐 요소를 다시 tasks 배열의 원래 위치에 넣어준다.
 - 4. 해당 행만 새로고침해준다.
